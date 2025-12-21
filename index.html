@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="dinosaur_game/dino.js"></script>
+    <script src="dinosaur_game/obstacle.js"></script>
+    <script src="dinosaur_game/game.js"></script>
+    <script src="main.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <div class="header">
+        <canvas id="gameCanvas" height="800" width="400"></canvas>
+        <span class="overlay">
+            <h1>Jennifer Werner</h1>
+            <h2>Game Dev Student</h2>
+            <button class="homeButton" onclick="scrollToHome()">Get to know me</button>
+        </span>
+    </div>
+
+    <ul class="navbar">
+        <li>
+            <a class="active" class="homeButton" onclick="scrollToHome()">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#Contact">
+                Contact
+            </a>
+        </li>
+        <li><a>Language</a></li>
+    </ul>
+
+
+    <div class="container">
+        <div class="profile">
+            <img src="/media/portrait.jpg" alt="Portrait of me" width="200px">
+            <h3>Jennifer Werner</h3>
+            <p>Games & Immersive Media student at Hochschule Furtwangen</p>
+            <div class="container" id="Icons">
+                <img src="media/icons8-github-60.png" width="10px">
+                <img src="media/icons8-linkedin-60.png">
+            </div>
+        </div>
+        <div class="content">
+            <div id="Home">
+                
+                <h1>About me</h1>
+                <p>Here are some facts about me </p>
+                <br>
+                <h2>My Skills</h2>
+                <p>Here are my skills </p>
+                <h2>My interests</h2>
+                <p>Here are my interests</p>
+                <br>
+
+            <div id="Projects">
+                <h1>Projects</h1>
+                <div id="Gallery" class="container">
+                    <div class="galleryItem" id="PTC" onclick="openModal(event)">
+                        <h2>Pet The Cats</h2>
+                        <img src="media/sillyCat.jpg">
+                        <div class="tagCollection0">
+                            <span class="tag">Video Game</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">2D</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">FMOD</span>
+                        </div>
+                        <div class="tagCollection1">
+                            <span class="tag">Team: 4</span>
+                            <span class="tag">6 weeks</span>
+                        </div>
+                        <p>Here is this really cool game I made please look atit and hire me and jhdhdhhdhshggss</p>
+
+                    </div>
+                    <div class="galleryItem" id="CuddleBuddies" onclick="openModal(event)">
+                        <h2>Cuddle Buddies</h2>
+                        <img src="media/sillyCat.jpg">
+                        <div class="tagCollection0">
+                            <span class="tag">Board Game</span>
+                        </div>
+                        <div class="tagCollection1">
+                            <span class="tag">Team: 4</span>
+                            <span class="tag">6 weeks</span>
+                        </div>
+                        <p>Here is this really cool game I made please look atit and hire me and jhdhdhhdhshggss</p>
+                    </div>
+                    <div class="galleryItem" id="Nightmare" onclick="openModal(event)">
+                        <h2>Nightmare Soundscape</h2>
+                        <img src="media/sillyCat.jpg">
+                        <div class="tagCollection0">
+                            <span class="tag">Video Game</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">VR</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">FMOD</span>
+                        </div>
+                        <div class="tagCollection1">
+                            <span class="tag">Team: 1</span>
+                            <span class="tag">2 weeks</span>
+                        </div>
+                        <p>Here is this really cool game I made please look atit and hire me and jhdhdhhdhshggss</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Contact"></div>
+            <dix class="hidden">
+                <img id="test1" src="media/test1.png">
+                <img id="test2" src="media/test2.png">
+                <img id="test3" src="media/test3.png" height="35">
+                <img id="fishWalking" src="media/fishWalking.gif">
+                <img id="anim0" src="media/fishAnim/fish0.png">
+                <img id="anim1" src="media/fishAnim/fish1.png">
+                <img id="anim2" src="media/fishAnim/fish2.png">
+                <img id="anim3" src="media/fishAnim/fish3.png">
+                <img id="anim4" src="media/fishAnim/fish4.png">
+            </dix>
+        </div>
+    </div>
+
+</body>
+</html>

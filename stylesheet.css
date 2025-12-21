@@ -1,0 +1,173 @@
+:root{
+    --color0:#231942;
+    --color1:#5e548e;
+    --color2:#9f86c0;
+    --color3:#be95c4;
+    --color4:#e0b1cb;
+    --color5:#ebd4d9;
+    --color6:#f6f6e7;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:-80%;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+}
+
+.overlay *{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color0);
+    position: sticky;
+    top: 20%;
+    z-index: 2;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    background-color: var(--color1);
+    cursor:pointer;
+}
+
+.navbar li a.active{
+    background-color: var(--color2);
+}
+
+.profile{
+    flex:2;
+    align-self: flex-start;
+    position: sticky;
+    top:25%;
+}
+
+.profile *{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 200px;
+}
+
+.profile img{
+    margin-left: auto;
+    margin-top:10%;
+    margin-bottom: 5%;
+    max-width: 200px;
+}
+
+#Icons{
+    display: flex;
+    justify-content:flex-start;
+    max-width: 200px;
+
+}
+
+#Icons * {
+    align-self: flex-start;
+    max-width: 50px;
+}
+
+.content{
+    flex:3;
+    margin-right: 5%;
+}
+
+#Home #Space{
+    margin-bottom: 30%;
+}
+
+#Gallery{
+    border: #3a9e1c;
+    border-style: solid;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.galleryItem{
+    width: 200px;
+    flex:1 0 auto;
+    border: #231942;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.galleryItem:hover{
+    width: 250px;
+    cursor: pointer;
+}
+
+.galleryItem img{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+}
+
+.galleryItem *{
+    margin: auto;
+
+    text-align: center;
+}
+
+.tagCollection0, .tagCollection1{
+    padding: 2px;
+}
+
+.tagCollection0 *{
+    background-color: var(--color1);
+}
+
+.tagCollection1 * {
+    background-color: var(--color2);
+}
+
+.tag{
+    font-size: smaller;
+    color:var(--color6);
+    padding: 2px 2px;
+}
