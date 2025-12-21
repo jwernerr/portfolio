@@ -171,3 +171,7 @@ html, body{
     color:var(--color6);
     padding: 2px 2px;
 }
+
+.hidden{
+    display: none;
+}
