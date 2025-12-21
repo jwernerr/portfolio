@@ -12,7 +12,7 @@ class Game{
     obstacles:Obstacle[]=[];
     obsCoundown:number=0;
 
-    gravity:number=-9.81; //canvas coords inverted
+    gravity:number=-9.81;
     moveSpeed:number=1.1;
 
     constructor(_canvas:HTMLCanvasElement){

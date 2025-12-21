@@ -5,7 +5,7 @@ class Game {
         this.colors = [];
         this.obstacles = [];
         this.obsCoundown = 0;
-        this.gravity = -9.81; //canvas coords inverted
+        this.gravity = -9.81;
         this.moveSpeed = 1.1;
         let r = document.querySelector(':root');
         for (let i = 0; i < 7; i++) {
