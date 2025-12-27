@@ -2,6 +2,7 @@
 class Game {
     constructor(_canvas) {
         this.autoplay = true;
+        this.nextAutoJump = 0;
         this.colors = [];
         this.obstacles = [];
         this.obsCoundown = 0;
@@ -22,8 +23,8 @@ class Game {
     }
     simulate() {
         //dino gravity sim
-        this.dino.yVel += this.gravity * 0.07;
-        this.dino.y += this.dino.yVel * 0.07;
+        this.dino.yVel += this.gravity * 0.06;
+        this.dino.y += this.dino.yVel * 0.06;
         //dino floor collision
         if (this.dino.y < 0) {
             this.dino.yVel = 0;
@@ -47,7 +48,7 @@ class Game {
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         this.dino.draw(this.ctx);
         for (let i = 0; i < this.obstacles.length; i++) {
-            this.obstacles[i].draw(this.ctx);
+            this.obstacles[i].draw(this.ctx, this.dino);
         }
     }
     jump() {

@@ -1,5 +1,6 @@
 class Game{
     autoplay:boolean=true;
+    nextAutoJump=0;
     
     //canvas setup
     canvas:HTMLCanvasElement;
@@ -36,8 +37,8 @@ class Game{
 
     simulate():void{
         //dino gravity sim
-        this.dino.yVel+=this.gravity*0.07;
-        this.dino.y+=this.dino.yVel*0.07;
+        this.dino.yVel+=this.gravity*0.06;
+        this.dino.y+=this.dino.yVel*0.06;
 
         //dino floor collision
         if(this.dino.y<0){
@@ -69,7 +70,7 @@ class Game{
         this.dino.draw(this.ctx);
         
         for (let i: number = 0; i < this.obstacles.length; i++) {
-            this.obstacles[i].draw(this.ctx);
+            this.obstacles[i].draw(this.ctx,this.dino);
         }
         
     }
